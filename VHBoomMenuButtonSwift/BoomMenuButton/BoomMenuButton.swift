@@ -55,7 +55,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     /// Rect (in points) of shadow path of BMB.
     ///
     /// The default value is (2, 2, BMB.width - 4, BMB.height - 4).
-    @IBInspectable public var shadowPathRect: CGRect! {
+    public var shadowPathRect: CGRect! {
         didSet {
             if shadowPathRect != oldValue {
                 setNeedsDisplay()
@@ -533,7 +533,7 @@ public class BoomMenuButton: UIView, BoomButtonDelegate, BackgroundDelegate {
     /// The boom-enum of booming and rebooming animations. This property changes the track of the boom-buttons' movement.
     ///
     /// The default value is **horizontalThrow2**.
-    @IBInspectable public var boomEnum = BoomEnum.horizontalThrow2
+    public var boomEnum = BoomEnum.horizontalThrow2
     
     /// The name of the ease using in movement, scale and rotation animations of boom-buttons when booming. This property is used to change movement, scale and rotation animations' ease name with a line of code.
     ///
